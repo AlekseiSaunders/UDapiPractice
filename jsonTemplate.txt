@@ -1,0 +1,18 @@
+"orgiDesc": "",
+ "etymology": "",
+"typeSpec": "",
+"description": "",
+"size": "",
+"typeLocality": "",
+"typeCoordsS": "",
+"typeCoordsE": "",
+"distribution": "",
+"habitat": "",
+"conservation": "",
+"food": {
+"fWild": "",
+"fCaptive": ""
+ },
+ "mating": "",
+"breeding": "",
+"zooBank": ""
