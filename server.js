@@ -25,6 +25,18 @@ app.get('/api/:fishGenera', (request, response) => {
     // res.status(400).json({message: 'Fish Genera Not Found'})
   }
 });
+app.get('/api/:fishGenera/:fishSpecies', (request, response) => {
+  const fishGen = request.params.fishGenera.toLowerCase();
+  const fishSpp = request.params.fishSpecies.toLowerCase();
+  if (madFish[fishGen][fishSpp]) {
+    console.log(madFish[fishGen][fishSpp]);
+    response.status(200);
+    response.json(madFish[fishGen][fishSpp]);
+  } else {
+    response.json(madFish['placeHolder']);
+    // res.status(400).json({message: 'Fish Genera Not Found'})
+  }
+});
 
 app.listen(process.env.PORT || PORT, () => {
   console.log(`App listening on PORT: ${PORT}`);
